@@ -1,0 +1,13 @@
+Software Requirements:
+----------------------
+
+* Android studio (API 30)
+* Android Emulator or Device
+* Firebase
+* DB browser SQL
+
+
+NOTE:
+
+Put your firebase file (google-services.json) into directory app\app here.
+Build and Run
