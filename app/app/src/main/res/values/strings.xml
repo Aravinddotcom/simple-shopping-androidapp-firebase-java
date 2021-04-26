@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Farmero</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="aboutus">Tetra Developers</string>
+    <string name="name1">S. Aravind Kumar</string>
+    <string name="name2">K. Dinesh Kumar</string>
+    <string name="name3">L. Jaivenkatesh</string>
+    <string name="name4">N. Jeevanandham</string>
+
+</resources>

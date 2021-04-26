@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_purple"
+    tools:context=".SellerHome">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="420dp"
+            android:background="@drawable/purp_elem"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.8" />
+
+
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/white_bg"
+            android:drawableStart="@drawable/ic_file"
+            android:drawableLeft="@drawable/ic_file"
+            android:elevation="20dp"
+            android:fontFamily="@font/abeezee"
+            android:onClick="btnBrowse_Click"
+            android:paddingLeft="5dp"
+            android:text="Browse Image"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnOpenCamera"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.45" />
+
+    <Button
+        android:id="@+id/btnOpenCamera"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/white_bg"
+        android:elevation="20dp"
+        android:drawableStart="@android:drawable/ic_menu_camera"
+        android:fontFamily="@font/abeezee"
+        android:paddingLeft="5dp"
+        android:text="Capture Now"
+        app:layout_constraintBottom_toBottomOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button3"
+        app:layout_constraintTop_toTopOf="@+id/button3"
+        android:drawableLeft="@android:drawable/ic_menu_camera" />
+
+
+        <ImageView
+            android:id="@+id/image_view_detail"
+            android:layout_width="300dp"
+            android:layout_height="400dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="600dp"
+            android:background="@drawable/ic_photob"
+            android:elevation="10dp"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.214" />
+
+        <EditText
+            android:id="@+id/txtImageName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/view_bg"
+            android:elevation="10dp"
+            android:fontFamily="@font/abeezee"
+            android:hint="Product name"
+            android:maxLines="1"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="#fff"
+            android:textColorHint="#A5B6BD"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.463"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.55"
+            app:layout_constraintWidth_percent=".8" />
+
+        <EditText
+            android:id="@+id/txtImageDesc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/view_bg"
+            android:elevation="10dp"
+            android:fontFamily="@font/abeezee"
+            android:hint="Description"
+            android:maxLines="2"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="#fff"
+            android:textColorHint="#A5B6BD"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtImageName"
+            app:layout_constraintVertical_bias="0.050000012"
+            app:layout_constraintWidth_percent=".8" />
+
+
+        <EditText
+            android:id="@+id/txtImagePrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/view_bg"
+            android:elevation="10dp"
+            android:fontFamily="@font/abeezee"
+            android:hint="Price ₹"
+            android:inputType="number"
+            android:maxLines="1"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="#fff"
+            android:textColorHint="#A5B6BD"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtImageDesc"
+            app:layout_constraintVertical_bias=".1"
+            app:layout_constraintWidth_percent=".8" />
+
+        <EditText
+            android:id="@+id/txtImageContact"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/view_bg"
+            android:elevation="10dp"
+            android:fontFamily="@font/abeezee"
+            android:hint="Contact detials"
+            android:inputType="number"
+            android:maxLines="1"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="#fff"
+
+            android:textColorHint="#A5B6BD"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtImagePrice"
+            app:layout_constraintVertical_bias="0.1"
+            app:layout_constraintWidth_percent=".8" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="236dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:elevation="10dp"
+            android:fontFamily="@font/abeezee"
+            android:onClick="btnUpload_Click"
+            android:text="Publish"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtImageContact"
+            app:layout_constraintVertical_bias="0.26999998"
+            app:layout_constraintWidth_percent=".8" />
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/seller"
+            android:elevation="10dp"
+            android:fontFamily="@font/abeezee"
+            android:text="SIGN OUT"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button2"
+            app:layout_constraintVertical_bias="0.3"
+            app:layout_constraintWidth_percent=".8" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>

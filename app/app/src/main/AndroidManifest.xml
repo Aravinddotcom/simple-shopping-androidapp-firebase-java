@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tetradev.farmeroapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".PasswordActivity"></activity>
+        <activity
+            android:name=".aboutus"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".Cart"
+            android:launchMode="singleTop" />
+        <activity android:name=".IntroActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ImageListActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".SellerHome"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".SellerSignUp"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".SellerSignIn"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".LoginActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ProductDetail"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".MainActivity$MainActivity"
+            android:launchMode="singleTop" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
